@@ -51,7 +51,7 @@ function generateRandomContent() {
 
 // Function to generate random color
 function generateRandomColor() {
-   const letters = '0123456789ABCDEF';
+   const letters = '0123456789ABCDEFこんにちは愛人類 コード7x';
    let color = '#';
    for (let i = 0; i < 6; i++) {
        color += letters[Math.floor(Math.random() * 16)];
