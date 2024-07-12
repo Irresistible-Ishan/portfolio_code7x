@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 70; 
+const NUM_ELEMENTS = 100; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
@@ -27,7 +27,10 @@ function generateRandomContent() {
        "Hello",
        "CODE7X",
        "World",
-       
+       "Tanvir is gay",
+       "Midas is tanvir's wife",
+       "ut is gay",
+       "code7x is god",
    ];
 
    const randomIndex = Math.floor(Math.random() * (symbols.length + sentences.length));
