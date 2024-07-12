@@ -1,22 +1,20 @@
-const NUM_ELEMENTS = 50; // Number of falling elements
+const NUM_ELEMENTS = 250; 
 
-// Function to create and animate falling elements
 function createFallingElements() {
    const container = document.getElementById('falling-container');
 
    for (let i = 0; i < NUM_ELEMENTS; i++) {
-       // Create a random falling element
+
        const element = document.createElement('div');
        element.className = 'falling-element';
-       element.style.left = `${Math.random() * 80 + 10}%`; /* Random left position within the 20% on each side */
-       element.style.animationDuration = `${Math.random() * 4 + 1}s`; // Randomize animation duration
-
-       // Generate random content
-       const content = generateRandomContent();
+       element.style.left = `${Math.random() * 80 + 10}%`; 
+       
+       element.style.animationDuration = `${Math.random() * 4 + 1}s`; 
+       
+       const content = "|" ; //generateRandomContent();
        element.textContent = content;
 
-       // Random color
-       element.style.color = generateRandomColor();
+       element.style.color = "#003D3E"; //generateRandomColor();
 
        container.appendChild(element);
    }
