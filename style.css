@@ -4,7 +4,7 @@
     --primary-color: #00F7FF;
     --secondary-color: #ff00e6;
     --bg-color: #0B0B1E;
-    --text-color: #ffffff;
+    --text-color: #003D3E;
   }
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,6 +13,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-image: url(solid-color-image.png)
 }
 
 ul {
@@ -38,4 +40,9 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+}
+
+.maintitle {
+  margin-top: 10%;
+  color: var(--text-color);
 }
