@@ -1,66 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CODE7X V0.2</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot Test</title>
 </head>
-
-<style>
-
-
-</style>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#about">INFO</a></li>
-            <li><a href="#Contact">PROJECTS</a></li>
-            <li><a href="aimadehomepage.html">V0.1</a></li>
-        </ul>
-    </nav>
-    <div class="retro-text">
-        <p id="clockText">CLOCK</p>
-    </div>
- 
-  
- <center>
-  <h1>
-    <p class = "maintitle">CODE7X</p></h1>
-    <p class = "subtitle">Times Innovations Ideas</p>
-  
- </center>
-<div id="falling-container"></div>
+  <h1>AI Chatbot Test</h1>
+  <form id="chatForm">
+    <label for="question">Ask your question:</label>
+    <input type="text" id="question" name="question" required>
+    <input type="submit" value="Submit">
+  </form>
+  <div id="answerContainer">
+    <!-- Answer will be displayed here -->
+  </div>
 
-  <div class="chat-container">
-    <center>
-    <p class = "aidivtitle">
-      <h>
-       Talk To Assistant 
-      </h>
-    </p>
-  </center>
-        <div class="question-form">
-            <form id="chatForm">
-                <input type="text" id="question" placeholder="Ask Anything Or About" required>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="answer-container" id="answerContainer">
-            <!-- Answer will be displayed here -->
-        </div>
-    </div>
-<script type="importmap">
-      {
-        "imports": {
-          "@google/generative-ai": "https://esm.run/@google/generative-ai"
-        }
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
       }
-    </script>
+    }
+  </script>
   <script type="module">
     import { GoogleGenerativeAI } from "@google/generative-ai";
 
@@ -83,9 +45,5 @@
       document.getElementById('question').value = '';
     });
   </script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
-
 </body>
-
 </html>

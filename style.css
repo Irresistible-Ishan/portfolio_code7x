@@ -14,6 +14,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow: hidden;
+  height: 100vh;
   /*background-repeat: no-repeat;
   /*background-image: url(solid-color-image.png)*/
 }
@@ -43,6 +44,7 @@ nav ul li a {
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    animation: rainbowText 7s linear infinite;
 }
 .retro-text {
     position: absolute;
@@ -136,16 +138,18 @@ li a:hover {
 .chat-container {
             background-color: #000;
             color: #fff;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 10px;
+            border-radius: 30px;
             width: 400px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;
         }
   .question-form {
             background-color: #fff;
             color: #000;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 30px;
             margin-bottom: 20px;
         }
   .question-form input[type="text"] {
@@ -153,20 +157,39 @@ li a:hover {
             padding: 10px;
             margin: 5px 0;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 30px;
         }
   .question-form input[type="submit"] {
             background-color: #000;
             color: #fff;
             padding: 10px;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             width: 100%;
         }
   .answer-container {
             background-color: #000;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 30px;
             color: #fff;
         }
+        
+        
+        
+@keyframes rainbowText {
+  0% { color: black; }
+  14% { color: white; }
+  28% { color: violet; }
+  42% { color: blue; }
+  57% { color: green; }
+  71% { color: pink; }
+  85% { color: orange; }
+  100% { color: darkred; }
+}
+
+.aidivtitle {
+  animation: rainbowText 7s linear infinite;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+}
