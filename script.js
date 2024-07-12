@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 150; 
+const NUM_ELEMENTS = 70; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
@@ -11,7 +11,7 @@ function createFallingElements() {
        
        element.style.animationDuration = `${Math.random() * 4 + 1}s`; 
        
-       const content = "⚪" ; //generateRandomContent();
+       const content = generateRandomContent();
        element.textContent = content;
 
        element.style.color = "#FFFFFF"; //generateRandomColor();
@@ -22,20 +22,11 @@ function createFallingElements() {
 
 // Function to generate random content
 function generateRandomContent() {
-   const symbols = '!@#$%^&*()_+-=[]{}|;:,.<>?🖌️♟️🎲🌏🪨🧠💀🧏🤫';
+   const symbols = '~`|•√π÷×§∆\}{=°^¢$¥€₹¥₱£%©®™✓[]><1234567890@#£_&-+()/?!;:*…;';
    const sentences = [
-       "Hello world!",
+       "Hello",
        "CODE7X",
-       "Mathematics",
-       "Science",
-       "こんにちは",
-       "नमस्ते",
-       "Innovation",
-       "Ideas",
-       "Earth",
-       "Peace",
-       "Humanity",
-       "Art",
+       "World",
        
    ];
 
@@ -49,7 +40,7 @@ function generateRandomContent() {
 
 // Function to generate random color
 function generateRandomColor() {
-   const letters = '0123456789ABCDEFこんにちは愛人類 コード7x';
+   const letters = '0123456789ABCDEF';
    let color = '#';
    for (let i = 0; i < 6; i++) {
        color += letters[Math.floor(Math.random() * 16)];
