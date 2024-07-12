@@ -4,7 +4,7 @@
     --primary-color: #00F7FF;
     --secondary-color: #ff00e6;
     --bg-color: #0B0B1E;
-    --text-color: #003D3E;
+    --text-color: #FFFFFF;
   }
 body {
   font-family: 'Roboto', sans-serif;
@@ -14,8 +14,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-image: url(solid-color-image.png)
+  /*background-repeat: no-repeat;
+  /*background-image: url(solid-color-image.png)*/
 }
 
 ul {
@@ -23,7 +23,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #00CEFF;
+  background-color: #101581;
 }
 
 li {
@@ -51,7 +51,7 @@ li a:hover {
 
 #falling-container {
    position: fixed;
-   top: 16px;
+   top: 50px;
    left: 0%; /* Restrict to the left 20% */
    width: 100%; /* Take 60% of the width */
    height: 100%;
