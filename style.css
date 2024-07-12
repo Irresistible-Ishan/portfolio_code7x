@@ -1,10 +1,26 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #00F7FF;
+    --secondary-color: #ff00e6;
+    --bg-color: #0B0B1E;
+    --text-color: #ffffff;
+  }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #00CEFF;
 }
 
 li {
@@ -16,7 +32,7 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: 'Roboto';
 }
 
 /* Change the link color to #111 (black) on hover */
