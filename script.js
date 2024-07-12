@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 50; 
+const NUM_ELEMENTS = 150; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
