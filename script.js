@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 200; 
+const NUM_ELEMENTS = 50; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
@@ -11,7 +11,7 @@ function createFallingElements() {
        
        element.style.animationDuration = `${Math.random() * 4 + 1}s`; 
        
-       const content = "•" ; //generateRandomContent();
+       const content = "⚪" ; //generateRandomContent();
        element.textContent = content;
 
        element.style.color = "#FFFFFF"; //generateRandomColor();

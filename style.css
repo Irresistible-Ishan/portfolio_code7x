@@ -61,9 +61,9 @@ li a:hover {
 
 .falling-element {
    position: absolute;
-   font-size: 20px;
+   font-size: 10px;
    color: #000; /* Default color */
-   animation: fallAnimation linear infinite;
+   animation: fallAnimation linear alternate infinite;
 }
 
 @keyframes fallAnimation {
@@ -73,6 +73,6 @@ li a:hover {
    }
    100% {
        transform: translateY(100vh) rotate(360deg); /* End below the viewport with full rotation */
-       opacity: 1; /* Fully visible */
+       opacity: 0.7; /* Fully visible */
    }
 }
