@@ -24,12 +24,21 @@ function createFallingElements() {
 
 // Function to generate random content
 function generateRandomContent() {
-   const symbols = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+   const symbols = '!@#$%^&*()_+-=[]{}|;:,.<>?🖌️♟️🎲🌏🪨🧠💀🧏🤫';
    const sentences = [
        "Hello world!",
        "CODE7X",
        "Mathematics",
-       "Science"
+       "Science",
+       "こんにちは",
+       "नमस्ते",
+       "Innovation",
+       "Ideas",
+       "Earth",
+       "Peace",
+       "Humanity",
+       "Art",
+       
    ];
 
    const randomIndex = Math.floor(Math.random() * (symbols.length + sentences.length));
