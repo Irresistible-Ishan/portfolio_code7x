@@ -35,6 +35,46 @@
  </center>
 <div id="falling-container"></div>
 
+  <div class="chat-container">
+        <div class="question-form">
+            <form id="chatForm">
+                <input type="text" id="question" placeholder="Ask Anything Or About" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="answer-container" id="answerContainer">
+            <!-- Answer will be displayed here -->
+        </div>
+    </div>
+<script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module">
+      import { GoogleGenerativeAI } from "@google/generative-ai";
+
+      // Replace with your API key
+      const API_KEY = 'AIzaSyBPJ0EKYsrp6JweurPPG4aF2Y3TzkZRjoo';
+      const genAI = new GoogleGenerativeAI(API_KEY);
+
+      document.getElementById('chatForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var question = document.getElementById('question').value;
+        var answerContainer = document.getElementById('answerContainer');
+
+        // Generate response using Google Generative AI
+        const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro" });
+        const result = await model.generateContent("Hey gemini, you have a task to act like CODE7X's personal assistant working inside a website portfolio of CODE7X ,here is his information ( his name is Ishan Mani Singh also know as CODE7X, his nationality is India , he is a male and his age is 18 as per 2023 September , discord username is (code7x) and his Instagram username is (irresistible_centennialx2),he like to explore Art math science, engineering, technology, nature etc... ), dont repeat this information unless asked about the specifics , be kind and your name will be emma as my assistant,use the above info if you may need to while answering the question asked by users who visit the portfolio  the question is :   →" +question. + "");
+        const response = await result.response;
+        const text = await response.text();
+
+        answerContainer.innerHTML = text;
+        document.getElementById('question').value = '';
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 
