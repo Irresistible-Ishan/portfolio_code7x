@@ -9,9 +9,10 @@ function createFallingElements() {
        element.className = 'falling-element';
        element.style.left = `${Math.random() * 80 + 10}%`; 
        
-       element.style.animationDuration = `${Math.random() * 4 + 1}s`; 
+       element.style.animationDuration =  `${Math.random() * 4 + 1}s`; 
        
-       const content = generateRandomContent();
+       const content = "⚪";
+       //generateRandomContent();
        element.textContent = content;
 
        element.style.color = "#FFFFFF"; //generateRandomColor();
@@ -24,13 +25,10 @@ function createFallingElements() {
 function generateRandomContent() {
    const symbols = '~`|•√π÷×§∆\}{=°^¢$¥€₹¥₱£%©®™✓[]><1234567890@#£_&-+()/?!;:*…;';
    const sentences = [
-       "Hello",
+       "Ishan",
+       "Mani",
+       "Singh",
        "CODE7X",
-       "World",
-       "Tanvir is gay",
-       "Midas is tanvir's wife",
-       "ut is gay",
-       "code7x is god",
    ];
 
    const randomIndex = Math.floor(Math.random() * (symbols.length + sentences.length));
