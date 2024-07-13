@@ -123,11 +123,11 @@ li a:hover {
 @keyframes fallAnimation {
    0% {
        transform: translateY(250px) rotate(0deg); /* Start above the viewport */
-       opacity: 0.5; /* Start invisible */
+       opacity: 1; /* Start invisible */
    }
-   50% {
+   90% {
        transform: translateY(-100vh) rotate(360deg); /* End below the viewport with full rotation */
-       opacity: 0.2; /* Fully visible */
+       opacity: 0; /* Fully visible */
    }
 }
 
