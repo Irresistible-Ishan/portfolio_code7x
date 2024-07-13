@@ -93,7 +93,7 @@ li a:hover {
 }
 
 .maintitle {
-  margin-top: 10%;
+  margin-top: 60px;
   color: var(--text-color);
   font-size: 50px;
 }
@@ -137,6 +137,7 @@ li a:hover {
 
 .chat-container {
             background-color: #000;
+            margin-top: 90px;
             color: #fff;
             padding: 10px;
             border-radius: 30px;
