@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 50; 
+const NUM_ELEMENTS = 70; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
@@ -22,7 +22,7 @@ function createFallingElements() {
 
 // Function to generate random content
 function generateRandomContent() {
-   const symbols = '⚪';
+   const symbols = '⚫•°|';
    const sentences = [
        "",
    ];
