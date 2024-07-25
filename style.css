@@ -2,9 +2,9 @@
 
 :root {
     --primary-color: #00F7FF;
-    --secondary-color: #ff00e6;
-    --bg-color: #0B0B1E;
-    --text-color: #FFFFFF;
+    --secondary-color: #FF00E6;
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
   }
 body {
   font-family: 'Roboto', sans-serif;
@@ -41,7 +41,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 16px;
     animation: rainbowText 7s linear infinite;
@@ -72,7 +72,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #101581;
+  background-color: #FFFFFF;
+  border-radius: 50px;
 }
 
 li {
@@ -116,7 +117,7 @@ li a:hover {
 .falling-element {
    position: absolute;
    font-size: 15px;
-   color: #000; /* Default color */
+   color: #FFFFFF; /* Default color */
    animation: fallAnimation linear infinite ;
 }
 
@@ -137,9 +138,9 @@ li a:hover {
 
 .chat-container {
             background-color: #000;
-            margin-top: 90px;
+            margin-top: 90%;
             color: #fff;
-            padding: 10px;
+            padding:10px;
             border-radius: 30px;
             width: 400px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -194,3 +195,5 @@ li a:hover {
   font-family: 'Orbitron', sans-serif;
   font-size: 24px;
 }
+
+

@@ -1,4 +1,4 @@
-const NUM_ELEMENTS = 300; 
+const NUM_ELEMENTS = 50; 
 
 function createFallingElements() {
    const container = document.getElementById('falling-container');
@@ -9,12 +9,12 @@ function createFallingElements() {
        element.className = 'falling-element';
        element.style.left = `${Math.random() * 80 + 10}%`; 
        
-       element.style.animationDuration =  `${Math.random() * 4 + 1}s`; 
+       element.style.animationDuration =  `${Math.random()*4+2}s`; 
        
        const content = generateRandomContent();
        element.textContent = content;
 
-       element.style.color = "#FFFFFF"; //generateRandomColor();
+       element.style.color = "#000000"; //generateRandomColor();
 
        container.appendChild(element);
    }
@@ -22,12 +22,9 @@ function createFallingElements() {
 
 // Function to generate random content
 function generateRandomContent() {
-   const symbols = '⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪⚪';
+   const symbols = '⚪';
    const sentences = [
-       "Ishan",
-       "Mani",
-       "Singh",
-       "CODE7X",
+       "",
    ];
 
    const randomIndex = Math.floor(Math.random() * (symbols.length + sentences.length));
