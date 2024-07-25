@@ -94,14 +94,17 @@ li a:hover {
 }
 
 .maintitle {
-  margin-top: 60px;
+  margin-top: 90px;
   color: var(--text-color);
   font-size: 50px;
 }
 
 .subtitle {
-  margin-top: 0px;
-  font-size :20px;
+  margin-top: -70px;
+  margin-left: 14px;
+  font-size :30px;
+  letter-spacing: 18px;
+  font-family: 'RocknRoll One', sans-serif;
   
 }
 #falling-container {
