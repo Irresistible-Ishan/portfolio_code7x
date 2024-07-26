@@ -6,6 +6,19 @@
     --bg-color: #FFFFFF;
     --text-color: #000000;
   }
+ .night-mode {
+    --primary-color: #00F7FF;
+    --secondary-color: #FF00E6;
+    --bg-color: #141414;
+    --text-color: #FFFFFF;
+  }
+ .night-mode-btn {
+   border-radius: 100%;
+   margin-left: 10px;
+   height:40px;
+   width:40px;
+   background-color:white;
+ }
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
@@ -57,7 +70,7 @@ nav ul li a {
     height: 38px;
     background-color: black;
     border-radius :3px;
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px var(--bg-color);
     color: white;
    /* padding: 10px 20px 10px 20px;*/
     font-family: 'Digital-7', sans-serif; /* Use a suitable digital clock font */
@@ -75,7 +88,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: var(--bg-color);
   border-radius: 50px;
 }
 
@@ -194,7 +207,7 @@ li a:hover {
 .chat-container {
             background-color: #000;
             margin-top: 90%;
-            color: #fff;
+            color: #FFFFFF;
             padding: 5px 5px 5px 5px;
             border-radius: 10%;
             width: 400px;
@@ -203,8 +216,8 @@ li a:hover {
             align-items: center;
         }
   .question-form {
-            background-color: #fff;
-            color: #000;
+            background-color: var(--bg-color);
+            color: #000000;
             padding: 10px;
             border-radius: 30px;
             margin-bottom: 20px;
@@ -215,9 +228,11 @@ li a:hover {
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 30px;
+            background-color:var(--bg-color);
+            color:var(--text-color);
         }
   .question-form input[type="submit"] {
-            background-color: #000;
+            background-color: #000000;
             color: #fff;
             padding: 10px;
             border: none;
@@ -226,10 +241,10 @@ li a:hover {
             width: 100%;
         }
   .answer-container {
-            background-color: #000;
+            background-color:#000000;
             padding: 10px;
             border-radius: 30px;
-            color: #fff;
+            color: #FFFFFF;
         }
         
         

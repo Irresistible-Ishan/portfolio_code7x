@@ -9,20 +9,21 @@ function createFallingElements() {
        element.className = 'falling-element';
        element.style.left = `${Math.random() * 80 + 10}%`; 
        
-       element.style.animationDuration =  `${Math.random()*4+2}s`; 
+       element.style.animationDuration = `${Math.random()*4+2}s`;
+       
        
        const content = generateRandomContent();
        element.textContent = content;
 
-       element.style.color = "#000000"; //generateRandomColor();
+       element.style.color = "#000000";
 
        container.appendChild(element);
    }
 }
 
-// Function to generate random content
+
 function generateRandomContent() {
-   const symbols = '•°|.';
+   const symbols = '.•°|';
    const sentences = [
        "🍃",
    ];
@@ -35,7 +36,6 @@ function generateRandomContent() {
    }
 }
 
-// Function to generate random color
 function generateRandomColor() {
    const letters = '0123456789ABCDEF';
    let color = '#';
@@ -45,7 +45,6 @@ function generateRandomColor() {
    return color;
 }
 
-// Initialize falling elements when the page loads
 window.onload = function() {
    createFallingElements();
 };
@@ -62,8 +61,15 @@ function updateClock() {
     document.getElementById('clockText').textContent = time;
 }
 
-// Update clock every second
+
 setInterval(updateClock, 1000);
 
-
+document.getElementById('toggleNightMode').addEventListener('click', function() {
+  document.body.classList.toggle('night-mode');
+  if (document.body.classList.contains('night-mode')) {
+    this.textContent = '🔆';
+  } else {
+    this.textContent = '🌙';
+  }
+});
 
