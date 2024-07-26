@@ -29,6 +29,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 10;
 }
 
 nav ul {
@@ -48,6 +49,7 @@ nav ul li a {
     animation: rainbowText 7s linear infinite;
 }
 .retro-text {
+    z-index:11;
     position: absolute;
     top: 15px;
     right: 16px;
@@ -94,13 +96,29 @@ li a:hover {
   background-color: #111;
 }
 
+
+.vine1 {
+  background-image:url("vines1.png");
+  position: absolute;
+  width: 900px;
+  height: 450px;
+  left: 0;
+  top: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+
 .maintitle {
+  z-index : 1;
   margin-top: 100px;
   color: var(--text-color);
   font-size: 80px;
 }
 
 .subtitle {
+  z-index: 1;
   animation: goldtext 5s reverse linear infinite;
   text-shadow: #000000;
   box-shadow: #000000;
@@ -113,6 +131,7 @@ li a:hover {
  
 }
 .subsubtitle {
+  z-index:1;
   margin-top: -20px;
   margin-left: 14px;
   font-size :30px;
@@ -122,11 +141,13 @@ li a:hover {
  
 }
 .underline {
+  z-index:1;
   text-decoration: underline;
   text-decoration-thickness: 4px; /* Adjust thickness */
   text-underline-offset: 4px; /* Adjust the space */
 }
 .footer {
+    z-index:10;
     background-color: #000000;
     color: white;
     text-align: center;
@@ -137,6 +158,7 @@ li a:hover {
     margin-top: 10px;
 }
 #falling-container {
+   z-index:0;
    position: absolute;
    top: 70px;
    left: 0%; /* Restrict to the left 20% */
@@ -147,6 +169,7 @@ li a:hover {
 }
 
 .falling-element {
+  z-index :0;
    position: absolute;
    font-size: 15px;
    color: #FFFFFF; /* Default color */
