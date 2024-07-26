@@ -18,6 +18,7 @@
    height:40px;
    width:40px;
    background-color:white;
+   animation:rainbowbtn 7s linear infinite;
  }
 body {
   font-family: 'Roboto', sans-serif;
@@ -259,6 +260,39 @@ li a:hover {
   85% { color: orange; }
   100% { color: darkred; }
 }
+@keyframes rainbowbtnn {
+  0% { box-shadow: 2px 2px 0 black; }
+  14% { box-shadow: 2px 2px 0 white; }
+  28% { box-shadow: 2px 2px 0 violet; }
+  42% { box-shadow: 2px 2px 0 blue; }
+  57% { box-shadow: 2px 2px 0 green; }
+  71% { box-shadow: 2px 2px 0 pink; }
+  85% { box-shadow: 2px 2px 0 orange; }
+  100% { box-shadow: 2px 2px 0 darkred; }
+}
+
+@keyframes rainbowbtn {
+  0% { box-shadow: 0 0 0px 4px black; }
+  14% { box-shadow: 0 0 0px 4px white; }
+  28% { box-shadow: 0 0 0px 4px violet; }
+  42% { box-shadow: 0 0 0px 4px blue; }
+  57% { box-shadow: 0 0 2000px 2000px green; }
+  71% { box-shadow: 0 0 0px 4px pink; }
+  85% { box-shadow: 0 0 0px 4px orange; }
+  100% { box-shadow: 0 0 0px 4px darkred; }
+}
+
+@keyframes rainbowbtnnn {
+  0% { box-shadow: 2px 2px 0 black, -2px -2px 0 black; }
+  14% { box-shadow: 2px 2px 0 white, -2px -2px 0 white; }
+  28% { box-shadow: 2px 2px 0 violet, -2px -2px 0 violet; }
+  42% { box-shadow: 2px 2px 0 blue, -2px -2px 0 blue; }
+  57% { box-shadow: 2px 2px 0 green, -2px -2px 0 green; }
+  71% { box-shadow: 2px 2px 0 pink, -2px -2px 0 pink; }
+  85% { box-shadow: 2px 2px 0 orange, -2px -2px 0 orange; }
+  100% { box-shadow: 2px 2px 0 darkred, -2px -2px 0 darkred; }
+}
+
 @keyframes goldtext {
   0% {color:#FFE757;}
   33% {color:#ffbf00;}

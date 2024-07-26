@@ -67,9 +67,9 @@ setInterval(updateClock, 1000);
 document.getElementById('toggleNightMode').addEventListener('click', function() {
   document.body.classList.toggle('night-mode');
   if (document.body.classList.contains('night-mode')) {
-    this.textContent = '🔆';
-  } else {
     this.textContent = '🌙';
+  } else {
+    this.textContent = '🔆';
   }
 });
 
