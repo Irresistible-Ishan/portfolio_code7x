@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
-:root {
+.night-mode {
     --primary-color: #00F7FF;
     --secondary-color: #FF00E6;
     --bg-color: #FFFFFF;
     --text-color: #000000;
   }
- .night-mode {
+ :root {
     --primary-color: #00F7FF;
     --secondary-color: #FF00E6;
     --bg-color: #141414;
