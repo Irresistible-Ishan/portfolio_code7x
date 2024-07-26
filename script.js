@@ -22,9 +22,9 @@ function createFallingElements() {
 
 // Function to generate random content
 function generateRandomContent() {
-   const symbols = '⚫•°|';
+   const symbols = '•°|.';
    const sentences = [
-       "",
+       "🍃",
    ];
 
    const randomIndex = Math.floor(Math.random() * (symbols.length + sentences.length));
