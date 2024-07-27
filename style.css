@@ -18,6 +18,7 @@
    height:40px;
    width:40px;
    background-color:white;
+   border:1px;
    animation:rainbowbtn 7s linear infinite;
  }
 body {
@@ -29,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100%;
   /*background-repeat: no-repeat;
   /*background-image: url(solid-color-image.png)*/
 }
@@ -268,7 +269,7 @@ li a:hover {
   28% { box-shadow: 0 0 0px 4px violet; }
   42% { box-shadow: 0 0 0px 4px blue; }
   57% { box-shadow: 0 0 0px 4px green; }
-  71% { box-shadow: 0 0 0px 4px pink; }
+  71% { box-shadow: 0 0 4000px 4000px pink; }
   85% { box-shadow: 0 0 0px 4px orange; }
   100% { box-shadow: 0 0 0px 4px darkred; }
 }
