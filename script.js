@@ -15,7 +15,7 @@ function createFallingElements() {
        const content = generateRandomContent();
        element.textContent = content;
 
-       element.style.color = "#000000";
+       element.style.color = generateRandomColor();
 
        container.appendChild(element);
    }
