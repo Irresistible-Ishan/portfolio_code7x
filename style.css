@@ -29,7 +29,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 100%;
   /*background-repeat: no-repeat;
   /*background-image: url(solid-color-image.png)*/
 }
@@ -166,10 +165,11 @@ li a:hover {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
     width: 100%;
     top:100px;
-    margin-top: auto;
+    bottom:0;
+    position: fixed;
+    margin-top: 100%;
 }
 #falling-container {
    z-index:0;
