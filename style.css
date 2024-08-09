@@ -153,11 +153,25 @@ li a:hover {
   
  
 }
+.subtitle-text {
+  z-index: 1;
+  animation: goldtext 5s reverse linear infinite;
+  text-shadow: #000000;
+  box-shadow: #000000;
+  margin-top: 0px;
+  margin-left: 14px;
+  font-size :15px;
+  letter-spacing: 1px;
+  font-family: 'RocknRoll One', sans-serif;
+  
+ 
+}
+
 .underline {
   z-index:1;
   text-decoration: underline;
   text-decoration-thickness: 4px; /* Adjust thickness */
-  text-underline-offset: 4px; /* Adjust the space */
+  text-underline-offset: 10px; /* Adjust the space */
 }
 .footer {
     z-index:10;
