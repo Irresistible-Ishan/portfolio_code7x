@@ -124,33 +124,10 @@ li a:hover {
 
 
 .maintitle {
-/*  text-shadow: 0 0 5px #E50B0B;
-  transition: text-shadow 0.3s ease;*/
   z-index : 1;
   margin-top: 100px;
   color: var(--text-color);
   font-size: 80px;
-}
-/*
-.maintitle:hover {
-  animation: rainbowshadow 5s linear infinite;
-}
-
-@keyframes rainbowshadow {
-  0% { text-shadow: 0 0 5px black; }
-  14% { text-shadow: 0 0 5px white; }
-  28% { text-shadow: 0 0 5px violet; }
-  42% { text-shadow: 0 0 5px blue; }
-  57% { text-shadow: 0 0 5px green; }
-  71% { text-shadow: 0 0 5px pink; }
-  85% { text-shadow: 0 0 5px orange; }
-  100% { text-shadow: 0 0 5px darkred; }
-}
-*/
-.rainbow-text {
-  font-size: 24px; /* Adjust as needed */
-  color: white; /* Base text color */
-  animation: rainbowTextShadow 5s linear infinite; /* Adjust duration as needed */
 }
 
 .subtitle {
