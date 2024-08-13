@@ -14,7 +14,7 @@
   }
  .night-mode-btn {
    border-radius: 100%;
-   margin-left: 10px;
+   margin-right: 15px;
    height:40px;
    width:40px;
    background-color:white;
@@ -70,7 +70,7 @@ nav ul li a {
     height: 38px;
     background-color: black;
     border-radius :3px;
-    box-shadow: 0 0 0 3px var(--bg-color);
+    box-shadow: 0 0 0 3px var(--text-color);
     color: white;
    /* padding: 10px 20px 10px 20px;*/
     font-family: 'Digital-7', sans-serif; /* Use a suitable digital clock font */
@@ -124,10 +124,32 @@ li a:hover {
 
 
 .maintitle {
+  text-shadow: 0 0 5px #E50B0B;
+  transition: text-shadow 0.3s ease;
   z-index : 1;
   margin-top: 100px;
   color: var(--text-color);
   font-size: 80px;
+}
+.maintitle:hover {
+  animation: rainbowshadow 5s linear infinite;
+}
+
+@keyframes rainbowshadow {
+  0% { text-shadow: 0 0 5px black; }
+  14% { text-shadow: 0 0 5px white; }
+  28% { text-shadow: 0 0 5px violet; }
+  42% { text-shadow: 0 0 5px blue; }
+  57% { text-shadow: 0 0 5px green; }
+  71% { text-shadow: 0 0 5px pink; }
+  85% { text-shadow: 0 0 5px orange; }
+  100% { text-shadow: 0 0 5px darkred; }
+}
+
+.rainbow-text {
+  font-size: 24px; /* Adjust as needed */
+  color: white; /* Base text color */
+  animation: rainbowTextShadow 5s linear infinite; /* Adjust duration as needed */
 }
 
 .subtitle {
@@ -213,6 +235,9 @@ li a:hover {
        transform: translateY(250px) rotate(360deg); /* End below the viewport with full rotation */
        opacity: 1; /* Fully visible */
    }
+}
+.stopped .falling-element {
+   animation-play-state: paused;
 }
 
 
